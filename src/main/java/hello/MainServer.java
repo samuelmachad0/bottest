@@ -58,7 +58,7 @@ public class MainServer {
                 Chat chat = msg.chat();
 
                 SendResponse sendResponse = bot.execute(
-                        new SendMessage(chat.id(), "Ola Amiguinho Y")
+                        new SendMessage(chat.id(), "Ola Amiguinho C")
                 );
 
             } else {
