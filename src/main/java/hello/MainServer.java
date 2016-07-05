@@ -51,14 +51,14 @@ public class MainServer {
             String response = new String(body, "UTF-8");
             JSONObject obj = new JSONObject(response);
 
-            if(obj.toString().indexOf("chat") != -1){  
+            if(obj.toString().indexOf("chat") != -1){
 
                 Update update = BotUtils.parseUpdate(response);
                 Message msg = update.message();
                 Chat chat = msg.chat();
 
                 SendResponse sendResponse = bot.execute(
-                        new SendMessage(chat.id(), "Ola Amiguinho")
+                        new SendMessage(chat.id(), "Ola Amiguinho x")
                 );
 
             } else {
